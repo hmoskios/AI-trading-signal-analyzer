@@ -19,20 +19,14 @@ The system uses a hybrid approach combining deterministic rules with LLM-based c
 - Python 3.11+ installed
 - OpenAI API key created
 
-### 1. Open the project folder
-
-Unzip the submitted project folder, then open a terminal in the project root (the folder containing `main.py` and `requirements.txt`).
-
-**Option A: Using File Explorer/Finder**
-
-- Navigate to the project folder
-- Right-click inside the folder → "Open in Terminal"
-
-**Option B: Using the command line**
+### 1. Clone the repository
 
 ```bash
-cd <path/to/Hannah-Moskios-Design-Challenge>
+git clone https://github.com/hmoskios/AI-trading-signal-analyzer.git
+cd AI-trading-signal-analyzer
 ```
+
+Alternatively, you can download the repository as a ZIP from GitHub and extract it. Once cloned or extracted, open a terminal in the project root (the folder containing `main.py` and `requirements.txt`).
 
 ### 2. Create and activate a virtual environment
 
