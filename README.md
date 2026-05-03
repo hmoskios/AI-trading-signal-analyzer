@@ -51,36 +51,7 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### 4. Add the price data
-
-Due to the 10 MB upload limit, the full price dataset is not included in this zip.
-
-- Download the price data from: https://drive.google.com/file/d/1PCO4OFTWhxi7_7q3O1yowQlQ2vPecVA0/view?usp=sharing
-
-- Unzip the downloaded file.
-
-- Place the `stock_price_data` folder inside the `data/` directory in the project. Your folder structure should look exactly like this:
-
-```
-project_root/
-├── data/
-│   └── stock_price_data/
-│       ├── AAPL.csv
-│       ├── TSLA.csv
-│       └── ...
-├── src/
-├── main.py
-└── ...
-```
-
-⚠️ Important:
-- Do **not** place the CSV files directly inside `data/`
-- The folder must be named exactly `stock_price_data`
-- The app expects the path: `data/stock_price_data/`
-
-If this structure is incorrect, the app will not be able to load price data.
-
-### 5. Add your OpenAI API key
+### 4. Add your OpenAI API key
 
 First, make a copy of `.env.template`:
 
@@ -98,7 +69,7 @@ cp .env.template .env
 
 Then open `.env` and fill in your **OpenAI API key**. If no API key is provided, the app will still run using rule-based classification, but ambiguous tweets will default to neutral and overall accuracy may be lower.
 
-### 6. Run the application
+### 5. Run the application
 
 ```bash
 streamlit run main.py
